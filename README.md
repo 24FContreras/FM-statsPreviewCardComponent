@@ -46,9 +46,9 @@ Users should be able to:
 
 This challenge presented me with one major issue: controlling the image's behaviour and filter.
 
-For the image styling, I used a backdrop a purple background. Then i used mix-blend-mode property and opacity to match the image's appearance to the reference.
+For the image styling, I used a purple background as a backdrop. Then i used mix-blend-mode property and opacity to match the image's appearance to the reference.
 
-To make the image's behaviour better with width shifts, In the media query I gave it height: 100% and object-fit: cover.
+To make the image work better with width shifts, In the media query I gave it height: 100% and object-fit: cover. That way, the image will fill the container as the shift occurs.
 
 ```scss
 img {
