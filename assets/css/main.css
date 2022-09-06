@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  background-color: #090b1a;
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5.5rem 1rem;
+}
+
+main {
+  background-color: #1b1938;
+  max-width: 20.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+main .card-img {
+  background-color: #aa5cdb;
+}
+
+main .card-img img {
+  width: 100%;
+  mix-blend-mode: multiply;
+  opacity: .75;
+}
+
+main .card-body {
+  text-align: center;
+  padding: 2rem;
+}
+
+main .card-body .card-text h1 {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+main .card-body .card-text h1 span {
+  color: #aa5cdb;
+}
+
+main .card-body .card-text > p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin-top: 1.4rem;
+}
+
+main .card-body .stats {
+  margin-top: 2rem;
+}
+
+main .card-body .stats > div:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+main .card-body .stats div .number {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+main .card-body .stats div .descriptor {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: .65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+footer {
+  margin-top: 1.5rem;
+  color: white;
+}
+
+footer a {
+  position: relative;
+  font-weight: 700;
+  color: #aa5cdb;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+footer a:hover, footer a:focus, footer a:active {
+  color: #9d00ff;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    flex-direction: row-reverse;
+    max-width: 69.5rem;
+  }
+  main img {
+    height: 100%;
+    object-fit: cover;
+  }
+  main > div {
+    width: 50%;
+  }
+  main .card-body {
+    min-height: 20rem;
+    text-align: start;
+    padding: 3.5rem 6.5rem 3.5rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .card-body .card-text h1 {
+    font-size: 2.2rem;
+  }
+  main .card-body .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2.5rem;
+    margin-bottom: 0;
+  }
+  main .card-body .stats > div:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
