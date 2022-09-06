@@ -108,7 +108,7 @@ footer a:hover, footer a:focus, footer a:active {
   main .card-body {
     min-height: 20rem;
     text-align: start;
-    padding: 3.5rem 6.5rem 3.5rem 3.5rem;
+    padding: 3.5rem 6.7rem 3.5rem 3.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
